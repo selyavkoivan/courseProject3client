@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA028461-39C1-4023-8725-21F6242D4D16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>регистрация</RootNamespace>
+    <AssemblyName>регистрация</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="authForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="authForm.Designer.cs">
+      <DependentUpon>authForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWorkFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminWorkFORM.Designer.cs">
+      <DependentUpon>AdminWorkFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFormCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFormVote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom.cs" />
+    <Compile Include="ReportDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDataForm.Designer.cs">
+      <DependentUpon>ReportDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserWorkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserWorkForm.Designer.cs">
+      <DependentUpon>UserWorkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoteCountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoteCountForm.Designer.cs">
+      <DependentUpon>VoteCountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PointForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PointForm.Designer.cs">
+      <DependentUpon>PointForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyConvert.cs" />
+    <Compile Include="regDataFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regDataFORM.Designer.cs">
+      <DependentUpon>regDataFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoServerForm.Designer.cs">
+      <DependentUpon>NoServerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regForm.Designer.cs">
+      <DependentUpon>regForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="authForm.resx">
+      <DependentUpon>authForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminWorkFORM.resx">
+      <DependentUpon>AdminWorkFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDataForm.resx">
+      <DependentUpon>ReportDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserWorkForm.resx">
+      <DependentUpon>UserWorkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoteCountForm.resx">
+      <DependentUpon>VoteCountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointForm.resx">
+      <DependentUpon>PointForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regDataFORM.resx">
+      <DependentUpon>regDataFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoServerForm.resx">
+      <DependentUpon>NoServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regForm.resx">
+      <DependentUpon>regForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\выход.png" />
+    <None Include="Resources\еж2.png" />
+    <None Include="Resources\еж1.png" />
+    <None Include="Resources\кондорсе1.png" />
+    <None Include="Resources\кондорсе.png" />
+    <None Include="Resources\ТаможняЛОГО9.png" />
+    <None Include="Resources\ТаможняЛОГО8.png" />
+    <None Include="Resources\ТаможняЛОГО7.png" />
+    <None Include="Resources\ТаможняЛОГО6.png" />
+    <None Include="Resources\ТаможняЛОГО5.png" />
+    <None Include="Resources\ТаможняЛОГО4.png" />
+    <None Include="Resources\ТаможняЛОГО3.png" />
+    <None Include="Resources\ТаможняЛОГО2.png" />
+    <None Include="Resources\ТаможняЛОГО1.png" />
+    <None Include="Resources\ТаможняЛОГО.png" />
+    <None Include="Resources\пользовательФОН1.png" />
+    <None Include="Resources\пользовательФОН.png" />
+    <None Include="Resources\ПОЛЬЗОВАТЕЛИФОН.png" />
+    <None Include="Resources\человек.png" />
+    <None Include="Resources\зямля.png" />
+    <None Include="Resources\агонь.png" />
+    <None Include="Resources\АВТОРИЗАЦИЯВход.png" />
+    <None Include="Resources\АВТОРИЗАЦИЯ.png" />
+    <None Include="Resources\АвторизацияНАДПИСЬ.png" />
+    <None Include="Resources\NoServer.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\GoBack.png" />
+    <None Include="Resources\GoBack1.2.png" />
+    <None Include="Resources\vote.png" />
+    <Content Include="Resources\АвторизацияФОН.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
